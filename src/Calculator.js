@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CalcButton from './CalcButton';
 
 export default class Calculator extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ export default class Calculator extends Component {
           <h1>This is a JavaScript Calculator</h1>
         </div>
         <div className='clac-layout'>
-          <div className='calc-button'></div>
+          <CalcButton />
         </div>
         <div className='footer'>
           by{' '}
