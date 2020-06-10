@@ -11,3 +11,11 @@ body {
   background-color: #00dbc5;
   color: #333;
 }
+
+.main {
+  padding: 15px;
+  background-color: #9acd32;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 3px;
+}
