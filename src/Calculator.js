@@ -33,6 +33,9 @@ export default class Calculator extends Component {
         <button id='divide' className='display' type='button'>
           /
         </button>
+        <button id='decimal' className='display' type='button'>
+          .
+        </button>
         <div className='footer'>
           by{' '}
           <a
