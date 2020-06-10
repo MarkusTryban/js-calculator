@@ -2,7 +2,7 @@ import React from 'react';
 
 const CalcButton = () => {
   return (
-    <div className='clac-layout'>
+    <div className='calc-layout'>
       <button id='zero' type='button' className='calc-button'>
         0
       </button>
