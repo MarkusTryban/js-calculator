@@ -13,10 +13,15 @@ export default class Calculator extends Component {
   render() {
     return (
       <div className='main'>
-        <div id='display'>
+        <div className='display'>
           <h1>This is a JavaScript Calculator</h1>
         </div>
         <CalcButton />
+
+        <button id='equals' className='display' type='button'>
+          =
+        </button>
+
         <div className='footer'>
           by{' '}
           <a
