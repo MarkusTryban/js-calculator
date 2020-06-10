@@ -16,9 +16,7 @@ export default class Calculator extends Component {
         <div id='display'>
           <h1>This is a JavaScript Calculator</h1>
         </div>
-        <div className='clac-layout'>
-          <CalcButton />
-        </div>
+        <CalcButton />
         <div className='footer'>
           by{' '}
           <a

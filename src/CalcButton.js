@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class CalcButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+const CalcButton = () => {
+  return (
+    <div className='clac-layout'>
+      <button type='button' className='calc-button'>
+        0
+      </button>
+    </div>
+  );
+};
 
-  render() {
-    return <div className='calc-button'></div>;
-  }
-}
+export default CalcButton;
