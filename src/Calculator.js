@@ -18,6 +18,16 @@ export default class Calculator extends Component {
         <div className='clac-layout'>
           <div className='calc-button'></div>
         </div>
+        <div className='footer'>
+          by{' '}
+          <a
+            href='https://markustryban.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Markus Tryban
+          </a>
+        </div>
       </div>
     );
   }
