@@ -18,22 +18,22 @@ export default class Calculator extends Component {
         </div>
         <CalcButton />
 
-        <button id='equals' className='display' type='button'>
+        <button id='equals' className='display-button' type='button'>
           =
         </button>
-        <button id='add' className='display' type='button'>
+        <button id='add' className='display-button' type='button'>
           +
         </button>
-        <button id='subtract' className='display' type='button'>
+        <button id='subtract' className='display-button' type='button'>
           -
         </button>
-        <button id='multiply' className='display' type='button'>
+        <button id='multiply' className='display-button' type='button'>
           *
         </button>
-        <button id='divide' className='display' type='button'>
+        <button id='divide' className='display-button' type='button'>
           /
         </button>
-        <button id='decimal' className='display' type='button'>
+        <button id='decimal' className='display-button' type='button'>
           .
         </button>
         <div className='footer'>
