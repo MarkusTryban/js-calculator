@@ -6,15 +6,17 @@ export default class Calculator extends Component {
     super(props);
 
     this.state = {
-      mainCalc: [],
+      calcValue: 0,
     };
   }
 
   render() {
+    const { calcValue } = this.state;
+
     return (
       <div className='main'>
         <div className='display'>
-          <h1>This is a JavaScript Calculator</h1>
+          <h1>{calcValue}</h1>
         </div>
         <CalcButton />
 
