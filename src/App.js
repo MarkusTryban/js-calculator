@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.css';
+import Calculator from './Calculator';
 
 function App() {
-  return (
-    <div>
-      <h1>This is a JavaScript Calculator</h1>
-    </div>
-  );
+  return <Calculator />;
 }
 
 export default App;
