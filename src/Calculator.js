@@ -21,7 +21,18 @@ export default class Calculator extends Component {
         <button id='equals' className='display' type='button'>
           =
         </button>
-
+        <button id='add' className='display' type='button'>
+          +
+        </button>
+        <button id='subtract' className='display' type='button'>
+          -
+        </button>
+        <button id='multiply' className='display' type='button'>
+          *
+        </button>
+        <button id='divide' className='display' type='button'>
+          /
+        </button>
         <div className='footer'>
           by{' '}
           <a
