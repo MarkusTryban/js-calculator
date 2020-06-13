@@ -6,7 +6,7 @@ export default class Calculator extends Component {
     super(props);
 
     this.state = {
-      calcValue: 0,
+      calcValue: '',
     };
   }
 
