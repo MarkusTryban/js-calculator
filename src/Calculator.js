@@ -19,28 +19,6 @@ export default class Calculator extends Component {
           <h1>{calcValue}</h1>
         </div>
         <CalcButton />
-
-        <button id='equals' className='display-button' type='button'>
-          =
-        </button>
-        <button id='add' className='display-button' type='button'>
-          +
-        </button>
-        <button id='subtract' className='display-button' type='button'>
-          -
-        </button>
-        <button id='multiply' className='display-button' type='button'>
-          *
-        </button>
-        <button id='divide' className='display-button' type='button'>
-          /
-        </button>
-        <button id='decimal' className='display-button' type='button'>
-          .
-        </button>
-        <button id='clear' className='display-button' type='button'>
-          clear
-        </button>
         <div className='footer'>
           by{' '}
           <a
