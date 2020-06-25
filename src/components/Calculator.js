@@ -6,7 +6,10 @@ export default class Calculator extends Component {
     super(props);
 
     this.state = {
-      calcValue: '',
+      input: '',
+      previousNumber: '',
+      currentNumber: '',
+      operator: '',
     };
   }
 
