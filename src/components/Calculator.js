@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Button from './Button';
+import ClearButton from './ClearButton';
+import Input from './Input';
 
 export default class Calculator extends Component {
   constructor(props) {
