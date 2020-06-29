@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class ClearButton extends Component {
+function ClearButton() {
   render() {
     <div className='clear-btn' onClick={() => this.props.handleClear()}></div>;
     return <div>{this.props.children}</div>;
   }
 }
+
+export default ClearButton;
