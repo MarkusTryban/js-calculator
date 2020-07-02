@@ -6,7 +6,11 @@ const ClearButton = (props) => {
   const { children, handleClear } = props;
 
   return (
-    <div className='clear-btn' role='button' onClick={() => handleClear()}>
+    <div
+      className='clear-btn'
+      role='presentation'
+      onClick={() => handleClear()}
+    >
       {children}
     </div>
   );
