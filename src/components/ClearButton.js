@@ -1,13 +1,12 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 
-const ClearButton = ({ children }) => {
+const ClearButton = (props) => {
+  const { children, handleClear } = props;
+
   return (
-    <div
-      className='clear-btn'
-      role='button'
-      onClick={() => this.props.handleClear()}
-    >
+    <div className='clear-btn' role='button' onClick={() => handleClear()}>
       {children}
     </div>
   );
@@ -15,6 +14,7 @@ const ClearButton = ({ children }) => {
 
 ClearButton.propTypes = {
   children: PropTypes.element.isRequired,
+  handleClear: PropTypes.func.isRequired,
 };
 
 export default ClearButton;
