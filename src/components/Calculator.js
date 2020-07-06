@@ -16,12 +16,10 @@ class Calculator extends Component {
   }
 
   render() {
-    const { calcValue } = this.state;
-
     return (
       <div className='main'>
         <div className='display'>
-          <h1>{calcValue}</h1>
+          <h1>{}</h1>
         </div>
         <div className='wrapper'>
           <div className='button-layout'>
