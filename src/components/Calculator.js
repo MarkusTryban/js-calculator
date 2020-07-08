@@ -19,6 +19,12 @@ class Calculator extends Component {
     this.setState({ input: this.state.input + val });
   };
 
+  addDecimal = (val) => {
+    if (this.state.input.indexOf('.') === -1) {
+      this.setState({ input: this.state.input + val });
+    }
+  };
+
   render() {
     return (
       <div className='main'>
