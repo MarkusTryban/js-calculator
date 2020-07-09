@@ -25,6 +25,12 @@ class Calculator extends Component {
     }
   };
 
+  addZeroToInput = (val) => {
+    if (this.state.input !== '') {
+      this.setState({ input: this.state.input + val });
+    }
+  };
+
   render() {
     return (
       <div className='main'>
