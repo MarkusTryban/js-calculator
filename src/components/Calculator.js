@@ -31,6 +31,10 @@ class Calculator extends Component {
     }
   };
 
+  clearInput = () => {
+    this.setState({ input: '' });
+  };
+
   render() {
     return (
       <div className='main'>
