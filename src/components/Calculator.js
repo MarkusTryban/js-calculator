@@ -47,6 +47,12 @@ class Calculator extends Component {
     this.state.operator = 'subtract';
   };
 
+  multiply = () => {
+    this.state.previousNumber = this.state.input;
+    this.setState({ input: '' });
+    this.state.operator = 'multiply';
+  };
+
   render() {
     return (
       <div className='main'>
