@@ -63,7 +63,7 @@ class Calculator extends Component {
     return (
       <div className='main'>
         <div className='display'>
-          <h1>{}</h1>
+          <h1>{this.state.input}</h1>
         </div>
         <div className='wrapper'>
           <div className='button-layout'>
