@@ -91,7 +91,7 @@ class Calculator extends Component {
             <button id='subtract'>-</button>
           </div>
           <div className='button-layout'>
-            <button id='clear'>clear</button>
+            <ClearButton handleClear={this.clearInput}>clear</ClearButton>
           </div>
         </div>
         <div className='footer'>
