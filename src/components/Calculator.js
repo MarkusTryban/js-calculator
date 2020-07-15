@@ -76,7 +76,9 @@ class Calculator extends Component {
             <Button handleClick={this.addToInput} id='nine'>
               9
             </Button>
-            <Button id='divide'>/</Button>
+            <Button handleClick={this.divide} id='divide'>
+              /
+            </Button>
           </div>
           <div className='button-layout'>
             <Button id='four'>4</Button>
