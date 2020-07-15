@@ -109,7 +109,9 @@ class Calculator extends Component {
             </Button>
           </div>
           <div className='button-layout'>
-            <Button id='decimal'>.</Button>
+            <Button handleClick={this.addDecimal} id='decimal'>
+              .
+            </Button>
             <Button id='zero'>0</Button>
             <Button id='equals'>=</Button>
             <Button id='subtract'>-</Button>
