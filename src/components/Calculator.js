@@ -16,7 +16,9 @@ class Calculator extends Component {
   }
 
   addToInput = (val) => {
-    this.setState({ input: this.state.input + val });
+    const { input } = this.state;
+
+    this.setState({ input: input + val });
   };
 
   addDecimal = (val) => {
