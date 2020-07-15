@@ -104,7 +104,9 @@ class Calculator extends Component {
             <Button handleClick={this.addToInput} id='three'>
               3
             </Button>
-            <Button id='add'>+</Button>
+            <Button handleClick={this.add} id='add'>
+              +
+            </Button>
           </div>
           <div className='button-layout'>
             <Button id='decimal'>.</Button>
