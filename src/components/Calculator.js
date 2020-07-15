@@ -60,10 +60,12 @@ class Calculator extends Component {
   };
 
   render() {
+    const { input } = this.state;
+
     return (
       <div className='main'>
         <div className='display'>
-          <h1>{this.state.input}</h1>
+          <h1>{input}</h1>
         </div>
         <div className='wrapper'>
           <div className='button-layout'>
