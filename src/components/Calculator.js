@@ -81,9 +81,15 @@ class Calculator extends Component {
             </Button>
           </div>
           <div className='button-layout'>
-            <Button id='four'>4</Button>
-            <Button id='five'>5</Button>
-            <Button id='six'>6</Button>
+            <Button handleClick={this.addToInput} id='four'>
+              4
+            </Button>
+            <Button handleClick={this.addToInput} id='five'>
+              5
+            </Button>
+            <Button handleClick={this.addToInput} id='six'>
+              6
+            </Button>
             <Button id='multiply'>*</Button>
           </div>
           <div className='button-layout'>
