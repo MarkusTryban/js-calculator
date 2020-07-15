@@ -42,7 +42,9 @@ class Calculator extends Component {
   };
 
   subtract = () => {
-    this.state.previousNumber = this.state.input;
+    const { input } = this.state;
+
+    this.state.previousNumber = input;
     this.setState({ input: '' });
     this.state.operator = 'subtract';
   };
