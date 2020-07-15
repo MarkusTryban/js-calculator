@@ -118,7 +118,9 @@ class Calculator extends Component {
             <Button handleClick={this.evaluate} id='equals'>
               =
             </Button>
-            <Button id='subtract'>-</Button>
+            <Button handleClick={this.subtract} id='subtract'>
+              -
+            </Button>
           </div>
           <div className='button-layout'>
             <ClearButton handleClear={this.clearInput}>clear</ClearButton>
