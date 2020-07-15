@@ -20,8 +20,10 @@ class Calculator extends Component {
   };
 
   addDecimal = (val) => {
-    if (this.state.input.indexOf('.') === -1) {
-      this.setState({ input: this.state.input + val });
+    const { input } = this.state;
+
+    if (input.indexOf('.') === -1) {
+      this.setState({ input: input + val });
     }
   };
 
