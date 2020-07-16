@@ -23,6 +23,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Formula Logic
+### Formula Logic
 
 This javascript calculator will utilize formula logic that observes the order of operator precedence.
