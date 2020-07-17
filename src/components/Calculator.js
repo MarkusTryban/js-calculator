@@ -78,7 +78,7 @@ class Calculator extends Component {
 
     this.state.currentNumber = input;
 
-    if (operator == 'plus') {
+    if (operator === 'plus') {
       this.setState({
         input: parseInt(previousNumber, 10) + parseInt(currentNumber, 10),
       });
