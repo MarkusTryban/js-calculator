@@ -74,13 +74,13 @@ class Calculator extends Component {
   };
 
   evaluate = () => {
-    this.state.currentNumber = this.state.input;
+    const { input, operator, currentNumber, previousNumber } = this.state;
 
-    if (this.state.operator == 'plus') {
+    this.state.currentNumber = input;
+
+    if (operator == 'plus') {
       this.setState({
-        input:
-          parseInt(this.state.previousNumber) +
-          parseInt(this.state.currentNumber),
+        input: parseInt(previousNumber, 10) + parseInt(currentNumber, 10),
       });
     }
   };
