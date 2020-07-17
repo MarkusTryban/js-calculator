@@ -73,6 +73,18 @@ class Calculator extends Component {
     this.state.operator = 'divide';
   };
 
+  evaluate = () => {
+    this.state.currentNumber = this.state.input;
+
+    if (this.state.operator == 'plus') {
+      this.setState({
+        input:
+          parseInt(this.state.previousNumber) +
+          parseInt(this.state.currentNumber),
+      });
+    }
+  };
+
   render() {
     const { input } = this.state;
 
