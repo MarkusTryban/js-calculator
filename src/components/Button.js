@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
 
-export default class Button extends Component {
+import PropTypes from 'prop-types';
+
+class Button extends Component {
   isOperator = (val) => {
     return !isNaN(val) || val === '.' || val === '=';
   };
 
   render() {
+    const { children, handleClick } = this.props;
+
     return (
       <div
-        className={`button ${
-          this.isOperator(this.props.children) ? '' : 'operator'
-        }`}
-        onClick={() => this.props.handleClick(this.props.children)}
+        className={`button ${this.isOperator(children) ? '' : 'operator'}`}
+        onClick={() => handleClick(children)}
       >
-        {this.props.children}
+        {children}
       </div>
     );
   }
 }
+
+Button.propTypes = {
+  children: PropTypes.element.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
+
+export default Button;
