@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class Button extends Component {
   isOperator = (val) => {
-    return !isNaN(val) || val === '.' || val === '=';
+    return !Number.isNaN(val) || val === '.' || val === '=';
   };
 
   render() {
