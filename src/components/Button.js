@@ -14,6 +14,7 @@ class Button extends Component {
       <div
         className={`button ${this.isOperator(children) ? '' : 'operator'}`}
         role='button'
+        tabIndex='-1'
         onKeyPress={this.handleKeyPress}
         onClick={() => handleClick(children)}
       >
