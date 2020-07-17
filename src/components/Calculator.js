@@ -86,6 +86,10 @@ class Calculator extends Component {
       this.setState({
         input: parseInt(previousNumber, 10) - parseInt(currentNumber, 10),
       });
+    } else if (operator === 'multiply') {
+      this.setState({
+        input: parseInt(previousNumber, 10) * parseInt(currentNumber, 10),
+      });
     }
   };
 
