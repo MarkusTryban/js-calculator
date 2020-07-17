@@ -13,6 +13,7 @@ class Button extends Component {
     return (
       <div
         className={`button ${this.isOperator(children) ? '' : 'operator'}`}
+        role='button'
         onClick={() => handleClick(children)}
       >
         {children}
