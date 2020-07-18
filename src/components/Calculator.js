@@ -166,16 +166,16 @@ class Calculator extends Component {
           <div className='button-layout'>
             <ClearButton handleClear={this.clearInput}>clear</ClearButton>
           </div>
-        </div>
-        <div className='footer'>
-          by{' '}
-          <a
-            href='https://markustryban.com'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Markus Tryban
-          </a>
+          <div className='footer'>
+            by{' '}
+            <a
+              href='https://markustryban.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Markus Tryban
+            </a>
+          </div>
         </div>
       </div>
     );
