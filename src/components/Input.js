@@ -9,7 +9,7 @@ const Input = (props) => {
 };
 
 Input.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 export default Input;
