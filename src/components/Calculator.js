@@ -103,7 +103,9 @@ class Calculator extends Component {
     return (
       <div className='main'>
         <div className='display'>
-          <Input>{input}</Input>
+          <div className='button-layout'>
+            <Input>{input}</Input>
+          </div>
         </div>
         <div className='wrapper'>
           <div className='button-layout'>
