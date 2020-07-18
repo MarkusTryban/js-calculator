@@ -102,12 +102,12 @@ class Calculator extends Component {
 
     return (
       <div className='main'>
-        <div className='display'>
-          <div className='button-layout'>
-            <Input>{input}</Input>
-          </div>
-        </div>
         <div className='wrapper'>
+          <div className='display'>
+            <div className='button-layout'>
+              <Input>{input}</Input>
+            </div>
+          </div>
           <div className='button-layout'>
             <Button handleClick={this.addToInput} id='seven'>
               7
