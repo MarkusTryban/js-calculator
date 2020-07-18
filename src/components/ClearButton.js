@@ -17,7 +17,7 @@ const ClearButton = (props) => {
 };
 
 ClearButton.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string.isRequired,
   handleClear: PropTypes.func.isRequired,
 };
 
