@@ -53,6 +53,7 @@ body {
   outline: 1px solid #888;
   height: 4em;
   background-color: #c5c3cd;
+  cursor: pointer;
 }
 
 .input {
