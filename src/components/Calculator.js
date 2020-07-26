@@ -37,7 +37,7 @@ class Calculator extends Component {
     }
   };
 
-  clearInput = () => {
+  clearCurrentState = () => {
     this.setState({
       input: '',
       previousNumber: '',
@@ -169,7 +169,9 @@ class Calculator extends Component {
             </Button>
           </div>
           <div className='button-layout'>
-            <ClearButton handleClear={this.clearInput}>clear</ClearButton>
+            <ClearButton handleClear={this.clearCurrentState}>
+              clear
+            </ClearButton>
           </div>
           <div className='footer'>
             by{' '}
