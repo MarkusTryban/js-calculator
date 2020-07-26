@@ -79,25 +79,29 @@ class Calculator extends Component {
   };
 
   evaluate = () => {
-    const { input, operator, currentNumber, previousNumber } = this.state;
+    const { input, operator, previousNumber } = this.state;
 
     this.state.currentNumber = input;
 
     if (operator === 'plus') {
       this.setState({
-        input: parseInt(previousNumber, 10) + parseInt(currentNumber, 10),
+        input:
+          parseInt(previousNumber, 10) + parseInt(this.state.currentNumber, 10),
       });
     } else if (operator === 'subtract') {
       this.setState({
-        input: parseInt(previousNumber, 10) - parseInt(currentNumber, 10),
+        input:
+          parseInt(previousNumber, 10) - parseInt(this.state.currentNumber, 10),
       });
     } else if (operator === 'multiply') {
       this.setState({
-        input: parseInt(previousNumber, 10) * parseInt(currentNumber, 10),
+        input:
+          parseInt(previousNumber, 10) * parseInt(this.state.currentNumber, 10),
       });
     } else if (operator === 'divide') {
       this.setState({
-        input: parseInt(previousNumber, 10) / parseInt(currentNumber, 10),
+        input:
+          parseInt(previousNumber, 10) / parseInt(this.state.currentNumber, 10),
       });
     }
   };
