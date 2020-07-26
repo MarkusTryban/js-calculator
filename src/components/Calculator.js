@@ -38,7 +38,12 @@ class Calculator extends Component {
   };
 
   clearInput = () => {
-    this.setState({ input: '' });
+    this.setState({
+      input: '',
+      previousNumber: '',
+      currentNumber: '',
+      operator: '',
+    });
   };
 
   add = () => {
