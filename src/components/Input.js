@@ -9,6 +9,13 @@ const Input = (props) => {
 };
 
 Input.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.number.isRequired,
+  ]),
+};
+
+Input.defaultProps = {
   children: PropTypes.string.isRequired,
 };
 
