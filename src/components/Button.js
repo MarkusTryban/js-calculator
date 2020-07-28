@@ -7,12 +7,19 @@ class Button extends Component {
     return !isNaN(val) || val === '.' || val === '=';
   };
 
+  buttonId = (children) => {
+    if (children === '7') {
+      return 'seven';
+    }
+  };
+
   render() {
     const { children, handleClick } = this.props;
 
     return (
       <div
         className={`button ${this.isOperator(children) ? '' : 'operator'}`}
+        id={this.buttonId(children)}
         role='button'
         tabIndex='-1'
         onKeyPress={this.handleKeyPress}
