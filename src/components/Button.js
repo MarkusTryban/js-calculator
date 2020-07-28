@@ -8,9 +8,15 @@ class Button extends Component {
   };
 
   buttonId = (children) => {
+    let id;
+
     if (children === '7') {
-      return 'seven';
+      id = 'seven';
+    } else if (children === '8') {
+      id = 'eight';
     }
+
+    return id;
   };
 
   render() {
