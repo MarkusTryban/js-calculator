@@ -14,6 +14,10 @@ class Button extends Component {
       id = 'seven';
     } else if (children === '8') {
       id = 'eight';
+    } else if (children === '9') {
+      id = 'nine';
+    } else if (children === '/') {
+      id = 'division';
     }
 
     return id;
