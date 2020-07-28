@@ -37,6 +37,7 @@ body {
   color: #888;
   outline: 1px solid #888;
   cursor: pointer;
+  user-select: none;
 }
 .operator {
   background-color: #fe9241;
