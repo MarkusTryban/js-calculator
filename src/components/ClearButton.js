@@ -8,6 +8,7 @@ const ClearButton = (props) => {
   return (
     <div
       className='clear-btn'
+      id='clear'
       role='presentation'
       onClick={() => handleClear()}
     >
