@@ -7,19 +7,41 @@ class Button extends Component {
     return !isNaN(val) || val === '.' || val === '=';
   };
 
-  buttonId = (children) => {
+  buttonId = (e) => {
     let id;
 
-    if (children === '7') {
-      id = 'seven';
-    } else if (children === '8') {
-      id = 'eight';
-    } else if (children === '9') {
-      id = 'nine';
-    } else if (children === '/') {
-      id = 'division';
-    } else if (children === '=') {
+    if (e === '=') {
       id = 'equals';
+    } else if (e === '0') {
+      id = 'zero';
+    } else if (e === '1') {
+      id = 'one';
+    } else if (e === '2') {
+      id = 'two';
+    } else if (e === '3') {
+      id = 'three';
+    } else if (e === '4') {
+      id = 'four';
+    } else if (e === '5') {
+      id = 'five';
+    } else if (e === '6') {
+      id = 'six';
+    } else if (e === '7') {
+      id = 'seven';
+    } else if (e === '8') {
+      id = 'eight';
+    } else if (e === '9') {
+      id = 'nine';
+    } else if (e === '+') {
+      id = 'add';
+    } else if (e === '-') {
+      id = 'subtract';
+    } else if (e === '*') {
+      id = 'multiply';
+    } else if (e === '/') {
+      id = 'divide';
+    } else if (e === '.') {
+      id = 'decimal';
     }
 
     return id;
