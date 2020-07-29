@@ -38,7 +38,7 @@ class Calculator extends Component {
 
   clearCurrentState = () => {
     this.setState({
-      input: '',
+      input: '0',
       previousNumber: '',
       operator: '',
     });
