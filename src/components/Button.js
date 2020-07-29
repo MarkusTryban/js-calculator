@@ -18,6 +18,8 @@ class Button extends Component {
       id = 'nine';
     } else if (children === '/') {
       id = 'division';
+    } else if (children === '=') {
+      id = 'equals';
     }
 
     return id;
