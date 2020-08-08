@@ -8,6 +8,7 @@ class Calculator extends Component {
     super(props);
 
     this.state = {
+      inputArrary: [],
       input: '',
       previousNumber: '',
       operator: '',
