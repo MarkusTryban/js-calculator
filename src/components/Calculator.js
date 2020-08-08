@@ -82,19 +82,19 @@ class Calculator extends Component {
 
     if (operator === 'plus') {
       this.setState({
-        input: parseInt(previousNumber, 10) + parseInt(input, 10),
+        input: parseFloat(previousNumber) + parseFloat(input),
       });
     } else if (operator === 'subtract') {
       this.setState({
-        input: parseInt(previousNumber, 10) - parseInt(input, 10),
+        input: parseFloat(previousNumber) - parseFloat(input),
       });
     } else if (operator === 'multiply') {
       this.setState({
-        input: parseInt(previousNumber, 10) * parseInt(input, 10),
+        input: parseFloat(previousNumber) * parseFloat(input),
       });
     } else if (operator === 'divide') {
       this.setState({
-        input: parseInt(previousNumber, 10) / parseInt(input, 10),
+        input: parseFloat(previousNumber) / parseFloat(input),
       });
     }
   };
