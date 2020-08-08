@@ -45,35 +45,30 @@ class Calculator extends Component {
     });
   };
 
-  add = () => {
+  previousNum = () => {
     const { input } = this.state;
 
     this.state.previousNumber = input;
     this.setState({ input: '' });
+  };
+
+  add = () => {
+    this.previousNum();
     this.state.operator = 'plus';
   };
 
   subtract = () => {
-    const { input } = this.state;
-
-    this.state.previousNumber = input;
-    this.setState({ input: '' });
+    this.previousNum();
     this.state.operator = 'subtract';
   };
 
   multiply = () => {
-    const { input } = this.state;
-
-    this.state.previousNumber = input;
-    this.setState({ input: '' });
+    this.previousNum();
     this.state.operator = 'multiply';
   };
 
   divide = () => {
-    const { input } = this.state;
-
-    this.state.previousNumber = input;
-    this.setState({ input: '' });
+    this.previousNum();
     this.state.operator = 'divide';
   };
 
