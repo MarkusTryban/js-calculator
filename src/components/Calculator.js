@@ -8,7 +8,7 @@ class Calculator extends Component {
     super(props);
 
     this.state = {
-      input: '',
+      input: '0',
       previousNumber: '',
       operator: '',
     };
@@ -17,7 +17,11 @@ class Calculator extends Component {
   addToInput = (val) => {
     const { input } = this.state;
 
-    this.setState({ input: input + val });
+    if (input === '0') {
+      this.setState({ input: val });
+    } else {
+      this.setState({ input: input + val });
+    }
   };
 
   addDecimal = (val) => {
