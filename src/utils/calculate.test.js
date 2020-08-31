@@ -1,4 +1,4 @@
-import calculate from '../../utils/calculate';
+import calculate from './calculate';
 
 describe('Calculate', () => {
   let expression;
