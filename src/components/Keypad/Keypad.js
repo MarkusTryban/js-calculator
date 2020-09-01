@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import calculate from '../../utils/calculate/calculate';
 
-import { buttonKeys } from '../../utils/constants';
+import buttonKeys from '../../utils/constants';
 
 import Button from '../Button/Button';
 
