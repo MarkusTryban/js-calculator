@@ -11,17 +11,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      expression: '',
+      expression: '2+2',
       total: 0,
     };
   }
 
   render() {
-    const { total } = this.state;
+    const { total, expression } = this.state;
 
     return (
       <div className='calculator-container'>
-        <Input>{total}</Input>
+        <Input expression={expression} total={total} />
         <Keypad />
       </div>
     );
