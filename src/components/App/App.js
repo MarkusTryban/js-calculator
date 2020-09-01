@@ -1,9 +1,20 @@
-import React from 'react';
-import './App.css';
-import Calculator from '../Calculator/Calculator';
+import React, { Component } from 'react';
 
-function App() {
-  return <Calculator />;
+import Input from '../Input/Input';
+
+import Keypad from '../Keypad/Keypad';
+
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className='calculator-container'>
+        <Input {...this.props} />
+        <Keypad {...this.props} />
+      </div>
+    );
+  }
 }
 
 export default App;
