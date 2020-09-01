@@ -1,22 +1,12 @@
 import React from 'react';
 
-import PropTypes from 'prop-types';
+export default (props) => {
+  const { total, expression } = props;
 
-const Input = (props) => {
-  const { children } = props;
-
-  return <div className='input'>{children}</div>;
+  return (
+    <div className='display-container'>
+      <div className='display'>{expression}</div>
+      <div className='input'>{total} </div>
+    </div>
+  );
 };
-
-Input.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string.isRequired,
-    PropTypes.number.isRequired,
-  ]),
-};
-
-Input.defaultProps = {
-  children: PropTypes.string.isRequired,
-};
-
-export default Input;
