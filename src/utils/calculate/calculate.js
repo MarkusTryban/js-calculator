@@ -1,4 +1,4 @@
-const calculator = (expression) => {
+export default (expression) => {
   const matched = new RegExp(
     '([\\d]+\\.?[\\d]*)?([-+/*][\\d]+\\.?[\\d]*)*'
   ).exec(expression);
@@ -15,5 +15,3 @@ const calculator = (expression) => {
 
   return new Function(`return ${matched[0]}`)();
 };
-
-export default calculator;
