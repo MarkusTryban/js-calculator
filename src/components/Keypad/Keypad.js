@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+import calculate from '../../utils/calculate/calculate';
+
 import { buttonKeys } from '../../utils/constants';
 
 import Button from '../Button/Button';
 
 class Keypad extends Component {
   handleClick = (key) => {
-    this.props.calculate(key);
+    calculate(key);
   };
 
   render() {
