@@ -7,11 +7,22 @@ import Keypad from '../Keypad/Keypad';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      expression: '',
+      total: 0,
+    };
+  }
+
   render() {
+    const { total } = this.state;
+
     return (
       <div className='calculator-container'>
-        <Input {...this.props} />
-        <Keypad {...this.props} />
+        <Input>{total}</Input>
+        <Keypad />
       </div>
     );
   }
