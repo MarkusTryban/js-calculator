@@ -16,7 +16,7 @@ class Keypad extends Component {
       <div className='keypad'>
         {buttonKeys.map((block) => {
           return (
-            <div key={block.id} className={block}>
+            <div key={block.toString()} className={block}>
               {block.map((key) => (
                 <Button
                   key={key}
