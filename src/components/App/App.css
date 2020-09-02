@@ -43,6 +43,13 @@
   align-self: flex-end;
 }
 
+.input {
+  flex: 2;
+  font-size: 200px;
+  width: 80%;
+  align-self: flex-end;
+}
+
 .footer {
   text-align: center;
   margin-top: 15px;
