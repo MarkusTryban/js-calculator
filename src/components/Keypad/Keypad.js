@@ -12,12 +12,23 @@ class Keypad extends Component {
   };
 
   render() {
-    return buttonKeys.map((block) => {
-      return block.map((key) => (
-        <Button key={key} onButtonClick={this.handleClick} buttonKey={key} />
-      ));
-    });
+    return (
+      <div className='keypad'>
+        {buttonKeys.map((block) => {
+          return (
+            <div key={block.id} className={block}>
+              {block.map((key) => (
+                <Button
+                  key={key}
+                  onButtonClick={this.handleClick}
+                  buttonKey={key}
+                />
+              ))}
+            </div>
+          );
+        })}
+      </div>
+    );
   }
 }
-
 export default Keypad;
