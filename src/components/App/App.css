@@ -27,6 +27,15 @@
   flex-direction: column;
 }
 
+.display,
+.input {
+  text-align: right;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .footer {
   text-align: center;
   margin-top: 15px;
