@@ -8,7 +8,22 @@ import Button from '../Button/Button';
 
 class Keypad extends Component {
   handleClick = (key) => {
-    calculate(key);
+    const { clear, deleteKey, evaluate } = this.props;
+
+    switch (key) {
+      case 'c':
+        clear();
+        break;
+      case 'Del':
+        deleteKey();
+        break;
+      case '=':
+        evaluate();
+        break;
+      default:
+        calculate(key);
+        break;
+    }
   };
 
   render() {
@@ -31,4 +46,5 @@ class Keypad extends Component {
     );
   }
 }
+
 export default Keypad;
