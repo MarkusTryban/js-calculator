@@ -73,6 +73,10 @@
   cursor: pointer;
 }
 
+.btn-orange {
+  background: #e48800;
+}
+
 .footer {
   text-align: center;
   margin-top: 15px;
