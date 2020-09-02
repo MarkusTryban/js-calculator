@@ -20,6 +20,13 @@
   background: #000;
 }
 
+.display-container {
+  flex: 0.5;
+  flex: 0.5 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   text-align: center;
   margin-top: 15px;
