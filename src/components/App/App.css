@@ -36,6 +36,13 @@
   justify-content: flex-end;
 }
 
+.display {
+  flex: 1;
+  font-size: 40px;
+  width: 90%;
+  align-self: flex-end;
+}
+
 .footer {
   text-align: center;
   margin-top: 15px;
