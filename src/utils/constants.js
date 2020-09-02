@@ -5,6 +5,7 @@ const buttonKeys = [
   ['0', '.', '=', '-'],
 ];
 
-export const operators = ['*', '-', '+', '/', '='];
+export const operators = ['*', '-', '+', '/'];
+export const specialOperators = ['c', '%', 'Del'];
 
 export default buttonKeys;
