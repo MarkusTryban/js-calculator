@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 
-import calculate from '../../utils/calculate/calculate';
-
 import buttonKeys from '../../utils/constants';
 
 import Button from '../Button/Button';
 
 class Keypad extends Component {
   handleClick = (key) => {
-    const { clear, deleteKey, evaluate } = this.props;
+    const { clear, deleteKey, evaluate, calculate } = this.props;
 
     switch (key) {
       case 'c':
