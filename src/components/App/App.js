@@ -1,31 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import Input from '../Input/Input';
 
 import Keypad from '../Keypad/Keypad';
 
+import calculate from '../../utils/calculate/calculate';
+
 import './App.css';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const App = () => {
+  const [expression, setExpression] = useState('');
+  const [total, setTotal] = useState(0);
 
-    this.state = {
-      expression: '2+2',
-      total: 0,
+  const setExpressionState = () => {
+    const initialState = { expression, total };
+
+    const { expressionKey } = initialState.expressionKey;
+
+    return {
+      ...initialState,
+      expression,
+      total: calculate(expressionKey),
     };
-  }
+  };
 
-  render() {
-    const { total, expression } = this.state;
-
-    return (
-      <div className='calculator-container'>
-        <Input expression={expression} total={total} />
-        <Keypad />
-      </div>
-    );
-  }
-}
-
+  return (
+    <div className='calculator-container'>
+      <Input expression={expression} total={total} />
+      <Keypad {setExpression()} />
+    </div>
+  );
+};
 export default App;
